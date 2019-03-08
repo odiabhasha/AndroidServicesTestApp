@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BinderServiceActivity">
+
+    <Button
+        android:id="@+id/buttonGetMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickGetMessage"
+        android:text="Get Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="clickBind"
+        android:text="Bind"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetMessage"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGetMessage"
+        app:layout_constraintStart_toStartOf="@+id/buttonGetMessage" />
+
+    <Button
+        android:id="@+id/buttonGetSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="clickGetSum"
+        android:text="Get Sum"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGetMessage"
+        app:layout_constraintStart_toStartOf="@+id/buttonGetMessage"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetMessage" />
+
+    <Button
+        android:id="@+id/buttonUnBind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="UnBind"
+        android:onClick="clickUnBind"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGetSum"
+        app:layout_constraintStart_toStartOf="@+id/buttonGetSum"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetSum" />
+</android.support.constraint.ConstraintLayout>
